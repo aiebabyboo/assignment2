@@ -1,4 +1,4 @@
-/* ==== Base Reset & Font Setup ==== */
+/* ===== Base Reset & Font Setup ===== */
 * {
     margin: 0;
     padding: 0;
@@ -26,9 +26,6 @@ a {
     text-decoration: none;
 }
 
-/* ==== Layout Containers ==== */
-
-
 /* ==== Header & Navigation ==== */
 /* Header */
 .site-header {
@@ -54,7 +51,7 @@ a {
     color: #fff;
 }
 
-/* Nagivation */
+/* Navigation */
 .nav-flex {
     display: flex;
     justify-content: space-between;
@@ -300,7 +297,7 @@ nav a:hover {
     padding: 4rem 4rem;
     text-align: center;
     border-radius: 12px;
-    margin: 2rem auto;
+    margin-bottom: 0;
 }
 
 .blog-link h2 {
@@ -417,20 +414,9 @@ nav a:hover {
 
 .read-more {
     font-weight: bold;
-    color: #7b00ff;
+    color: #004fcc;
     border-bottom: 2px solid transparent;
     transition: all 0.3s ease;
-}
-
-@media (max-width: 600px) {
-    .blog-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .nav-flex {
-        flex-direction: column;
-        align-items: flex-start;
-    }
 }
 
 /* ==== Blog Grid Layout ==== */
@@ -463,10 +449,6 @@ nav a:hover {
     text-align: center;
     padding: 1rem 0;
 }
-
-/* .blog-main {
-    grid-area: main;
-} */
 
 .blog-sidebar {
     grid-area: sidebar;
@@ -524,8 +506,159 @@ article h2 {
     text-decoration: underline;
 }
 
-/* ==== Blog Media Query ==== */
+/* ==== FAQs Section ==== */
+.faqs {
+    background: radial-gradient(circle at top left,#fff4e6, #f3e7ff, #e6f3ff, #eaffea);
+    color:#1c1e21;
+    text-align: center;
+    padding: 5rem 2rem;
+}
+
+.faq-search {
+    margin-bottom: 3rem;
+}
+
+.faq-search h2 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.faq-search p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.faq-search input {
+    padding: 1rem 1.5rem;
+    width: 60%;
+    max-width: 600px;
+    border-radius: 10px;
+    border: 1px solid #f0fafd;
+    font-size: 1rem;
+    background: #fff;
+}
+
+.faq-search button {
+    padding: 1rem 2rem;
+    background-color: #f0fafd;
+    color: #606770;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.faq-search button:hover {
+    background-color: #dee2eb;
+}
+
+.faqs h3:hover {
+    text-decoration: underline;
+}
+
+.fags h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color:#1c1e21;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.fag-item {
+    padding: 2rem;
+    border-radius: 16px;
+    text-align: left;
+}
+.faq-item h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #1c1e21;
+}
+
+.faq-item p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+
+/* ==== Footer Styling ==== */
+.site-footer {
+  background-color: #f9f9f9;
+  padding: 3rem 2rem;
+  font-size: 0.9rem;
+  color: #333;
+  border-top: 1px solid #e0e0e0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.footer-info h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+}
+
+.footer-info p {
+  margin: 0.4rem 0;
+  color: #666;
+}
+
+.footer-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0.4rem;
+}
+
+.footer-link a {
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.footer-link a:hover {
+  color: #004fcc;
+  text-decoration: underline;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 0.8rem;
+  margin-top: 2rem;
+  color: #777;
+  padding-top: 1rem;
+}
+
+
+/* ====== Media Query ====== */
 @media (max-width: 600px) {
+
+    /* === Header === */
+
+    /* == Navigation == */
+
+    /* === Hero Section === */
+    /* === About Section === */
+    /* === Service Section === */
+    /* === Blog Link Section === */
+    /* === Blog Section === */
     .blog-layout {
         grid-template-areas:
         "header"
@@ -534,5 +667,22 @@ article h2 {
         "footer";
         grid-template-columns: 1fr;
     }
-}
 
+
+    /* === Faqs Section === */
+    .faq-search h2 {
+        font-size: 1.5rem;
+    }
+    .faq-search input {
+        width: 100%;
+        border-radius: 100px;
+        margin-bottom: 1rem;
+    }
+
+    .faq-search button {
+        width: 30%;
+        padding: 0.8rem 1rem;
+        font-size: 0.95rem;
+        border-radius: 100px;
+    }
+}
