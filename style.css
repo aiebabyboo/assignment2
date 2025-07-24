@@ -3,24 +3,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; /* smooth scrolling */
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', sans-serif; /* Changing the font */
     background: #fff;
     color: #1c1e21;
-    line-height: 1.6;
-    scroll-behavior: smooth;
-    font-size: 12px;
-    height: 100%;
-    overflow-x: hidden;
+    line-height: 1.6rem; /* Make sure the text always in the best height line */
+    overflow-x: hidden; /* Help the content not changing too much when changing the width */
 }
 
-img {
-    max-width: 100%;
-    display: block;
-}
 
 a {
     color: inherit;
@@ -29,6 +22,7 @@ a {
 
 /* ==== Header & Navigation ==== */
 /* Header */
+/* Sticky header with transparent background */
 .site-header {
     position: fixed;
     top: 0;
@@ -52,6 +46,7 @@ a {
 
 
 /* Navigation */
+/* Flexbox for logo + nav links */
 .nav-flex {
     display: flex;
     justify-content: space-between;
@@ -79,6 +74,7 @@ nav a:hover {
 
 
 /* ==== Hero Section ==== */
+/* Fullscreen background hero section with VR image */
 .hero {
     position: relative;
     height: 100vh;
@@ -104,9 +100,9 @@ nav a:hover {
     height: 100%;
     position: relative;
     bottom: 4rem;
-    /* padding: 4rem; */
 }
 
+  /* Centered headline and subtext */
 .hero-text {
     padding: 2rem;
     z-index: 2;
@@ -128,6 +124,7 @@ nav a:hover {
 }
 
 /* Button Group */
+/* Button group inside hero */
 .hero-button {
     margin-top: 4rem;
     margin-bottom: 2rem;
@@ -159,6 +156,7 @@ nav a:hover {
 /* ==== About Section ==== */
 
 /* About */
+/* Centered content with light background */
 .about {
     background-color: #f6f7f8;
     padding: 3rem 2rem;
@@ -188,6 +186,7 @@ nav a:hover {
 }
 
 /* Stats layout */
+/* Stat cards under About section */
 .stats {
     display: flex;
     justify-content: center;
@@ -216,6 +215,7 @@ nav a:hover {
 }
 
 /* ==== Service Section ==== */
+/* Grid layout for services */
 .services {
     background-color: #ffffff;
     padding: 1rem 2rem;
@@ -250,6 +250,7 @@ nav a:hover {
     }
 }
 /* Service Cards */
+/* Individual service card with hover effects */
 .card {
     background-color:#f6f7f8;
     padding: 2rem;
@@ -291,6 +292,7 @@ nav a:hover {
 /* === Blog Link Section ==== */
 
 /* Blog Article Link */
+/* Gradient background and link to blog post */
 .blog-link {
     background: linear-gradient(to right, #ffffff, #f6f7f8);
     padding: 4rem 4rem;
@@ -332,6 +334,7 @@ nav a:hover {
 
 
 /* ==== Blog Section ====*/
+/* Container for blog cards */
 .blog-section {
     background-color: #f6f7f8; /* Light gray */
     padding: 4rem 2rem;
@@ -400,6 +403,7 @@ nav a:hover {
 }
 
 /* Grid Layout */
+/* Responsive grid for blog post previews */
 .blog-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -415,8 +419,12 @@ nav a:hover {
     color: #004fcc;
     border-bottom: 2px solid transparent;
     transition: all 0.3s ease;
+    text-decoration: underline;
 }
 
+.read-more:hover {
+    color: radial-gradient() ;
+}
 /* ==== Article Content ==== */
 article img {
     width: 100%;
@@ -577,7 +585,9 @@ article h2 {
 
 /* ===== Blog - VR Nexus ===== */
 /* Blog Grid Layout */
+ /* Grid layout with header, main, sidebar, footer */
 .blog-layout {
+    line-height: 1.6;
     display: grid;
     grid-template-areas: 
     "header header"
@@ -614,6 +624,7 @@ article h2 {
 
 
 /* Blog - Sidebar */
+/* Sidebar with author info or links */
 .blog-sidebar {
     grid-area: sidebar;
     background: #fff;
