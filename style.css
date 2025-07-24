@@ -419,11 +419,10 @@ nav a:hover {
     color: #004fcc;
     border-bottom: 2px solid transparent;
     transition: all 0.3s ease;
-    text-decoration: underline;
 }
 
 .read-more:hover {
-    color: radial-gradient() ;
+    text-decoration:underline ;
 }
 /* ==== Article Content ==== */
 article img {
@@ -654,7 +653,7 @@ article h2 {
     text-decoration: underline;
 }
 
-/* ====== Media Query ====== */
+/* ====== Responsive Adjustments (Mobile) ====== */
 @media screen and (max-width:600px) {
 
     /* === Header === */
