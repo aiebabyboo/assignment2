@@ -1,7 +1,7 @@
 # assignment2
 
 # VR Nexus 
-This is a responsive homepage as part of a web development assignment. It showcases modern HTML/CSS layout techniques including Flexbox, Grid, responsive design with media queries, and entrance animation using @keyframes.
+This is a responsive homepage as part of a web development assignment. It showcases modern HTML/CSS layout techniques including Flex-box, Grid, responsive design with media queries, and entrance animation using @keyframes.
 
 The theme is centered around virtual reality (VR) technology and immersive experiences.
 
@@ -10,7 +10,7 @@ The theme is centered around virtual reality (VR) technology and immersive exper
 ## Tech Used
 - HTML5
 - CSS3
-- CSS Grid & Flexbox
+- CSS Grid & Flex-box
 - Media Queries ('@media screen and (max-width: 600px)')
 - CSS animation with '@keyframes'
 - Git & Github for version control
@@ -25,4 +25,4 @@ The theme is centered around virtual reality (VR) technology and immersive exper
 
 #### Github Repository
 
-[View the repository here] ()
+[View the repository here] (https://aiebabyboo.github.io/assignment2/index.html)
